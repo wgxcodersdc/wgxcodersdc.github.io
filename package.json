@@ -11,14 +11,17 @@
     "fix": "gts fix"
   },
   "dependencies": {
-    "@fontsource/manrope": "^5.0.20",
     "@fontsource/material-symbols-sharp": "^5.0.12",
-    "@fontsource/source-code-pro": "^5.0.18",
     "@mantine/core": "^7.8.1",
     "@mantine/hooks": "^7.8.1",
+    "classnames": "^2.5.1",
+    "date-fns": "^3.6.0",
+    "gray-matter": "^4.0.3",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "20.11.5",

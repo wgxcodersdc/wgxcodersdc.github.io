@@ -1,3 +1,4 @@
-@import "@fontsource/manrope";
-@import "@fontsource/source-code-pro";
-@import "@fontsource/material-symbols-sharp";
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}

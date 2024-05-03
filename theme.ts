@@ -1,7 +1,11 @@
 import { createTheme } from "@mantine/core";
+import { Lora, Source_Code_Pro } from 'next/font/google'
+
+const lora = Lora({ subsets: ['latin'] })
+const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
 export const theme = createTheme({
-  fontFamily: 'Manrope, sans-serif',
+  fontFamily: sourceCodePro.style.fontFamily,
   defaultRadius: 'md',
-  headings: {fontFamily: 'Source Sans Pro, monospace'},
+  headings: {fontFamily: lora.style.fontFamily},
 });
