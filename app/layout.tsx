@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import {  ColorSchemeScript, MantineProvider } from '@mantine/core';
+import type {Metadata} from 'next';
+import {Inter} from 'next/font/google';
+import {ColorSchemeScript, MantineProvider} from '@mantine/core';
 
-import { theme } from "@/theme";
+import {theme} from '@/theme';
 
 import '@mantine/core/styles.css';
-import "./global.css";
-import { Header, NavBar } from "@/components";
+import './global.css';
+import {Header, NavBar} from '@/components';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ['latin']});
 
 export const metadata: Metadata = {
-  title: "WGXCDC",
-  description: "Women and Gender eXpansive Coders DC",
+  title: 'WGXCDC',
+  description: 'Women and Gender eXpansive Coders DC',
 };
 
 export default function RootLayout({

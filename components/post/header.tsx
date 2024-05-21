@@ -1,6 +1,6 @@
-import {Avatar, CoverImage, DateFormatter} from "../";
-import { PostTitle } from "./title";
-import { type Author } from "@/interfaces/author";
+import {Avatar, CoverImage, DateFormatter} from '../';
+import {PostTitle} from './title';
+import {type Author} from '@/interfaces/author';
 
 type Props = {
   title: string;
@@ -9,7 +9,7 @@ type Props = {
   author: Author;
 };
 
-export function PostHeader({ title, coverImage, date, author }: Props) {
+export function PostHeader({title, coverImage, date, author}: Props) {
   return (
     <>
       <PostTitle>{title}</PostTitle>

@@ -1,18 +1,16 @@
-import { Post } from "@/interfaces/post";
-import { PostPreview } from "./preview";
+import {Post} from '@/interfaces/post';
+import {PostPreview} from './preview';
 
 type Props = {
   posts: Post[];
 };
 
-export function MoreStories({ posts }: Props) {
+export function MoreStories({posts}: Props) {
   return (
     <section>
-      <h2>
-        More Stories
-      </h2>
+      <h2>More Stories</h2>
       <div>
-        {posts.map((post) => (
+        {posts.map(post => (
           <PostPreview
             key={post.slug}
             title={post.title}

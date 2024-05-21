@@ -1,18 +1,18 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
-import markdownToHtml from "@/lib/markdownToHtml";
-import { PostBody, PostHeader } from "@/components";
+import {Metadata} from 'next';
+import {notFound} from 'next/navigation';
+import {getAllPosts, getPostBySlug} from '@/lib/api';
+import {CMS_NAME} from '@/lib/constants';
+import markdownToHtml from '@/lib/markdownToHtml';
+import {PostBody, PostHeader} from '@/components';
 
-export default async function Post({ params }: Params) {
+export default async function Post({params}: Params) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post.content || '');
 
   return (
     <main>
@@ -35,7 +35,7 @@ type Params = {
   };
 };
 
-export function generateMetadata({ params }: Params): Metadata {
+export function generateMetadata({params}: Params): Metadata {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -56,7 +56,7 @@ export function generateMetadata({ params }: Params): Metadata {
 export async function generateStaticParams() {
   const posts = getAllPosts();
 
-  return posts.map((post) => ({
+  return posts.map(post => ({
     slug: post.slug,
   }));
 }

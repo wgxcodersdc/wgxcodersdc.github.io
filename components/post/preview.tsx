@@ -1,6 +1,6 @@
-import { type Author } from "@/interfaces/author";
-import Link from "next/link";
-import {Avatar, CoverImage, DateFormatter} from "../";
+import {type Author} from '@/interfaces/author';
+import Link from 'next/link';
+import {Avatar, CoverImage, DateFormatter} from '../';
 
 type Props = {
   title: string;

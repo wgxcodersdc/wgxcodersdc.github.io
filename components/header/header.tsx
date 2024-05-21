@@ -1,4 +1,4 @@
-import {  Title, Text } from "@mantine/core"
+import {Title, Text} from '@mantine/core';
 
 export const Header = () => {
   return (
@@ -6,5 +6,5 @@ export const Header = () => {
       <Title>Hello World</Title>
       <Text>Women and Gender eXpansive Coders DC</Text>
     </header>
-  )
-}
+  );
+};
