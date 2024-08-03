@@ -4,7 +4,7 @@
 
 ### Font
 
--    [Montserrat google font](https://fonts.google.com/specimen/Montserrat?preview.text=WGXC%20DC&preview.size=43&sort=popularity)
+-    [Montserrat Google Font](https://fonts.google.com/specimen/Montserrat?preview.text=WGXC%20DC&preview.size=43&sort=popularity)
 
 ### Logo Colors
 
