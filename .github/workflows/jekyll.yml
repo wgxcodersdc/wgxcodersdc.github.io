@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Jekyll Site CI
 
 on:
      push:
@@ -13,7 +13,7 @@ jobs:
                - name: Setup Ruby
                  uses: ruby/setup-ruby@v1
                  with:
-                      ruby-version: 3.0 # specify ruby version
+                      ruby-version: 3.3.4
                - name: Install dependencies
                  run: |
                       gem install bundler
