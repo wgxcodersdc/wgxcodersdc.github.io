@@ -21,16 +21,17 @@
 title: Women and Gender eXpansive Coders DC
 email: organizers@wgxcodersdc.org
 description: >- # this means to ignore newlines until "baseurl:"
-     Women and Gender eXpansive Coders DC aims to provide a community where women and non-binary members feel empowered to express their learnings, share their experiences, and expand their technical skills.
+  Women and Gender eXpansive Coders DC aims to provide a community where women and non-binary members feel empowered to express their learnings, share their experiences, and expand their technical skills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: WGXCodersDC
+linkedin_username: women-and-gender-expansive-coders-dc
 github_username: wgxcodersdc
 
 # Build settings
 theme: minima
 plugins:
-     - jekyll-feed
+  - jekyll-feed
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
