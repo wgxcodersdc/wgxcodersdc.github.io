@@ -4,7 +4,7 @@ title: Join Our Community
 permalink: /community/
 ---
 
-## [Meetup](https://www.meetup.com/women-and-gender-expansive-coders-dc-wgxc-dc/s)
+## [Meetup](https://www.meetup.com/women-and-gender-expansive-coders-dc-wgxc-dc/)
 
 Connect with women and non-binary members through our Meetup group, where you can RSVP and attend both virtual and in-person events, including technical talks, coding workshops, and networking sessions.
 
