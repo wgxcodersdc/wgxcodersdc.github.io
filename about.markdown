@@ -12,7 +12,7 @@ Women and Gender eXpansive Coders DC envisions a community where women and non-b
 
 Women and Gender eXpansive Coders DC aims to provide a safe place physically and virtually for our community. If any person is disruptive, rude, harasses or otherwise negatively impacts the community, they may be removed from an ongoing event, future events, and community as a whole based on the severity of the interaction.
 
-We ask that all people who attend the events conduct themselves in a professional manner and treat other attendees with respect. If anyone has a concern, experiences or observes harassment, or has a negative interaction with another attendee, please reach out to an organizer of the event in progress, or after an event via email (organizers@wgxcodersdc.org) or Slack.
+We ask that all people who attend the events conduct themselves in a professional manner and treat other attendees with respect. If anyone has a concern, experiences or observes harassment, or has a negative interaction with another attendee, please reach out to an organizer of the event in progress, or after an event via email ({{site.email}}) or Slack.
 
 Harassment includes, but is not limited to offensive verbal/electronic comments related to personal characteristics or choices, sexual images or comments in public or online spaces, deliberate intimidation, bullying, stalking, following, harassing photography or recording, sustained disruption of talks, Slack chats, electronic meetings, physical meetings or other events, inappropriate physical contact, or unwelcome sexual attention. Participants asked to stop any harassing or bullying behavior are expected to comply immediately.
 
