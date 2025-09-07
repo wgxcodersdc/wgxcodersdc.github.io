@@ -28,6 +28,8 @@ linkedin_username: women-and-gender-expansive-coders-dc
 github_username: wgxcodersdc
 # bluesky_username: wgxcodersdc.bsky.social #uncomment this line to display bluesky social in the footer. The footer will need some tweaking as the username is long and breaks badly, plus we need the bluesky logo.
 
+author: Women and Gender eXpansive Coders DC
+
 # Build settings
 theme: minima
 plugins:
