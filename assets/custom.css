@@ -1,3 +1,31 @@
 .header-logo {
     width:50px;
 }
+
+button {
+    background-color: #e81b39;
+    border:0;
+    color:white;
+    padding:6px;
+    border-radius: 5%;
+}
+
+@media screen and (min-width:601px) {
+    .header {
+        display:grid;
+        grid-template-columns:1fr 6fr 4fr;   
+        container-type: inline-size;
+        gap: 1em;
+        max-width: 900px;
+        align-content: center;
+        justify-content: center;
+        margin-top:0.5rem;
+}
+.cell {
+    height: 100%;
+}
+.site-title {
+    font-size: 3cqw;
+    white-space:nowrap;
+}
+}
