@@ -30,6 +30,12 @@ github_username: wgxcodersdc
 
 author: Women and Gender eXpansive Coders DC
 
+# Header navigation - only these pages appear in header
+# Privacy policy and Terms of Use are in footer only
+header_pages:
+  - about.markdown
+  - community.markdown
+
 # Build settings
 theme: minima
 plugins:
