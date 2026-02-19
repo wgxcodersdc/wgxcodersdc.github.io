@@ -62,6 +62,25 @@ layout: default
     </div>
   </section>
 
+  {%- assign latest_post = site.posts | first -%}
+  {%- if latest_post -%}
+  <section class="home-section home-blog-feature">
+    <h2>From Our Blog</h2>
+    <p>News, announcements, and updates from our community.</p>
+    <div class="blog-feature-card">
+      <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title | escape }}</a></h3>
+      <span class="blog-feature-meta">{{ latest_post.date | date: "%B %-d, %Y" }}</span>
+      {%- if latest_post.excerpt -%}
+      <p>{{ latest_post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {%- endif -%}
+    </div>
+    <div class="blog-feature-actions">
+      <a href="/event-interest-form.html" class="btn-secondary btn-small">Submit a Talk Proposal</a>
+      <a href="/blog/" class="blog-feature-more-link">View all posts &rarr;</a>
+    </div>
+  </section>
+  {%- endif -%}
+
   <section class="home-join-cta">
     <h2>Find Your Place Here</h2>
     <p>Whether you're new to programming, experienced, or simply passionate about technology&mdash;there's a place for you.</p>

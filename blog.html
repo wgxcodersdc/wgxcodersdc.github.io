@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-listing">
+  {%- for post in site.posts -%}
+  <div class="blog-post-summary">
+    <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <span class="blog-post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+    {%- if post.excerpt -%}
+    <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
+</div>

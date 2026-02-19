@@ -34,6 +34,7 @@ author: Women and Gender eXpansive Coders DC
 # Privacy policy and Terms of Use are in footer only
 header_pages:
   - about.markdown
+  - blog.html
   - community.markdown
 
 # Build settings
