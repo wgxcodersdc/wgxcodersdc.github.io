@@ -65,12 +65,6 @@
 | `logos/` | Logo files in SVG and PNG at various sizes |
 | `_config.yml` | Site configuration (requires server restart on change) |
 
-## Style Guide
-
-- **Font**: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- **Brand red**: `#e81b39`
-- **Brand navy**: `#003380`
-
 ## Deployment
 
 Pushes to `main` automatically build and deploy to GitHub Pages via the GitHub Actions workflow in `.github/workflows/jekyll.yml`.
