@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="prospectus">
+
+  <section class="prospectus-hero">
+    <img src="/logos/png/circles/400x400/wgxc_circle_color_white_background.png" alt="WGXC DC logo" class="prospectus-logo">
+    <h1>Women and Gender eXpansive Coders DC</h1>
+    <p class="prospectus-tagline">Empowering women and non-binary technologists in the DC area</p>
+  </section>
+
+  <section class="prospectus-section">
+    <h2>Our Mission</h2>
+    <p>Women and Gender eXpansive Coders DC envisions a community where women and non-binary members feel empowered to express their learnings, share their experiences, and feel safe in bringing their unique visions to events. We seek to foster growth in technical skills, career opportunities, and friendship through virtual and in-person meetings.</p>
+  </section>
+
+  <section class="prospectus-section">
+    <h2>Our Impact</h2>
+    <div class="prospectus-stats">{% for stat in site.data.stats %}
+      <div class="stat-card">
+        <span class="stat-number">{{ stat.number }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section class="prospectus-section">
+    <h2>What We Do</h2>
+    <p>WGXC DC hosts a mix of events designed to build skills and community:</p>
+    <ul>{% for activity in site.data.donate_activities %}
+      <li><strong>{{ activity.label }}</strong> {{ activity.detail }}</li>
+{%- endfor %}
+    </ul>
+  </section>
+
+  <section class="prospectus-section">
+    <h2>How Your Donation Is Used</h2>
+    <p>As a volunteer-run nonprofit, we keep overhead low and direct funds where they matter most:</p>
+    <ul>{% for item in site.data.donation_usage %}
+      <li><strong>{{ item.label }}</strong> {{ item.detail }}</li>
+{%- endfor %}
+    </ul>
+  </section>
+
+  <section class="prospectus-section">
+    <h2>{{ site.data.goals.year }} Goals</h2>
+    <ul>{% for goal in site.data.goals.items %}
+      <li>{{ goal }}</li>
+{%- endfor %}
+    </ul>
+  </section>
+
+  <section class="tax-info-box">
+    <h3>Tax Information</h3>
+    <p>WGXC Inc is a 501(c)(3) nonprofit organization (designated December 2025).<br>
+    EIN: 39-3385530. Your donations are tax deductible.</p>
+  </section>
+
+  <section class="prospectus-cta">
+    <h2>Support Our Mission</h2>
+    <p>Your contribution &mdash; of any amount &mdash; helps us continue providing free events to our community.</p>
+    <div class="prospectus-cta-actions">
+      <button zeffy-form-link="https://www.zeffy.com/embed/donation-form/kickstart-wgxc-dc?modal=true" class="prospectus-donate-btn">Donate Now</button>
+      <p class="prospectus-direct-link">Or donate directly at <a href="https://www.zeffy.com/en-US/donation-form/kickstart-wgxc-dc">zeffy.com/en-US/donation-form/kickstart-wgxc-dc</a></p>
+    </div>
+    <p class="prospectus-contact">Questions? Contact us at <a href="mailto:organizers@wgxcodersdc.org">organizers@wgxcodersdc.org</a></p>
+  </section>
+
+  <div class="prospectus-print-footer">
+    <p>wgxcodersdc.org &nbsp;|&nbsp; organizers@wgxcodersdc.org</p>
+    <p>Meetup: meetup.com/women-and-gender-expansive-coders-dc-wgxc-dc &nbsp;|&nbsp; Slack: wgxcdc.slack.com &nbsp;|&nbsp; LinkedIn: linkedin.com/company/women-and-gender-expansive-coders-dc</p>
+  </div>
+
+</div>
