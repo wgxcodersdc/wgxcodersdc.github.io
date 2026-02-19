@@ -163,6 +163,396 @@ button {
     }
 }
 
+/* ====================== */
+/* Homepage styles        */
+/* ====================== */
+
+.homepage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Hero */
+
+.home-hero {
+    text-align: center;
+    padding: 2.5rem 0 1.5rem;
+}
+
+.home-hero-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.home-hero h1 {
+    font-size: 2.2rem;
+    color: #003380;
+    margin-bottom: 0.5rem;
+}
+
+.home-hero-subtitle {
+    font-size: 1.15rem;
+    color: #555;
+    max-width: 540px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.5;
+}
+
+.home-hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #e81b39;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #e81b39;
+    cursor: pointer;
+}
+
+.btn-primary:visited {
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c8152f;
+    border-color: #c8152f;
+    color: white;
+}
+
+.btn-secondary {
+    display: inline-block;
+    color: #003380;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #003380;
+}
+
+.btn-secondary:visited {
+    color: #003380;
+}
+
+.btn-secondary:hover {
+    background-color: #003380;
+    color: white;
+}
+
+/* Stats bar */
+
+.home-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Sections */
+
+.home-section {
+    margin-bottom: 2.5rem;
+}
+
+.home-section h2 {
+    color: #003380;
+    border-bottom: 2px solid #003380;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-section > p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Event category cards */
+
+.event-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.category-card:hover {
+    border-color: #003380;
+    box-shadow: 0 2px 8px rgba(0, 51, 128, 0.08);
+}
+
+.category-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.category-icon--workshops {
+    background-color: #003380;
+}
+
+.category-icon--career {
+    background-color: #e81b39;
+}
+
+.category-icon--social {
+    background-color: #1a6b3c;
+}
+
+.category-icon--community {
+    background-color: #7c4daf;
+}
+
+.category-card h3 {
+    color: #003380;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.category-card > p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.category-examples {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-examples li {
+    font-size: 0.85rem;
+    color: #777;
+    padding: 0.2rem 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.category-examples li:first-child {
+    border-top: none;
+}
+
+/* Highlight cards */
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.highlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.highlight-card:hover {
+    border-color: #003380;
+    box-shadow: 0 2px 8px rgba(0, 51, 128, 0.08);
+}
+
+.highlight-image {
+    height: 140px;
+}
+
+.highlight-image--1 {
+    background: linear-gradient(135deg, #003380, #336aaf);
+}
+
+.highlight-image--2 {
+    background: linear-gradient(135deg, #1a6b3c, #3da36a);
+}
+
+.highlight-image--3 {
+    background: linear-gradient(135deg, #e81b39, #f06a7d);
+}
+
+.highlight-image--4 {
+    background: linear-gradient(135deg, #7c4daf, #a67fd6);
+}
+
+.highlight-content {
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.highlight-content h3 {
+    color: #003380;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-meta {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Join CTA */
+
+.home-join-cta {
+    background: #fdf2f3;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.home-join-cta h2 {
+    color: #003380;
+    margin-bottom: 0.5rem;
+}
+
+.home-join-cta > p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.join-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.join-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #e8e8e8;
+}
+
+.join-link:visited {
+    color: inherit;
+}
+
+.join-link:hover {
+    border-color: #003380;
+    box-shadow: 0 2px 8px rgba(0, 51, 128, 0.08);
+}
+
+.join-link i {
+    font-size: 1.6rem;
+    color: #003380;
+    margin-bottom: 0.25rem;
+}
+
+.join-link strong {
+    color: #003380;
+    font-size: 0.95rem;
+}
+
+.join-link span {
+    color: #777;
+    font-size: 0.75rem;
+}
+
+/* Support section */
+
+.home-support {
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+    border-top: 2px solid #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.home-support h2 {
+    color: #003380;
+    margin-bottom: 0.5rem;
+}
+
+.home-support > p {
+    color: #555;
+    max-width: 540px;
+    margin: 0 auto 1.25rem;
+    line-height: 1.5;
+}
+
+.home-support-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.home-support-learn-more {
+    color: #003380;
+    font-size: 0.95rem;
+}
+
+/* Homepage mobile responsive */
+
+@media screen and (max-width: 600px) {
+    .home-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .home-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .join-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-join-cta {
+        padding: 1.5rem 1rem;
+    }
+}
+
 /* Prospectus print styles */
 @media print {
     .site-header,
