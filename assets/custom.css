@@ -29,3 +29,194 @@ button {
     white-space:nowrap;
 }
 }
+
+/* Prospectus page styles */
+
+.prospectus {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.prospectus-hero {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.prospectus-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.prospectus-hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.prospectus-tagline {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+}
+
+.prospectus-section {
+    margin-bottom: 2rem;
+}
+
+.prospectus-section h2 {
+    color: #003380;
+    border-bottom: 2px solid #003380;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.prospectus-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1.25rem 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e81b39;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.tax-info-box {
+    background: #f0f4fa;
+    border-left: 4px solid #003380;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.tax-info-box h3 {
+    color: #003380;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.prospectus-cta {
+    background: #fdf2f3;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.prospectus-cta h2 {
+    color: #003380;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.prospectus-donate-btn {
+    font-size: 1.1rem;
+    padding: 12px 32px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.prospectus-direct-link {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.prospectus-contact {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.prospectus-print-footer {
+    display: none;
+}
+
+/* Prospectus mobile responsive */
+@media screen and (max-width: 600px) {
+    .prospectus-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prospectus-hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .prospectus-cta {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Prospectus print styles */
+@media print {
+    .site-header,
+    .site-footer,
+    .site-nav {
+        display: none !important;
+    }
+
+    .prospectus-print-footer {
+        display: block;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #333;
+        border-top: 1px solid #ccc;
+        padding-top: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .prospectus-donate-btn {
+        display: none;
+    }
+
+    .prospectus-direct-link {
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    .prospectus {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .prospectus-section,
+    .tax-info-box,
+    .prospectus-cta {
+        break-inside: avoid;
+    }
+
+    .prospectus-cta {
+        background: #f5f5f5;
+    }
+
+    .stat-number {
+        color: #e81b39;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .tax-info-box {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .prospectus-hero {
+        padding-top: 0.5rem;
+    }
+}
