@@ -18,23 +18,12 @@ permalink: /donate/
 
   <section class="prospectus-section">
     <h2>Our Impact</h2>
-    <div class="prospectus-stats">
+    <div class="prospectus-stats">{% for stat in site.data.stats %}
       <div class="stat-card">
-        <span class="stat-number">800+</span>
-        <span class="stat-label">Meetup Members</span>
+        <span class="stat-number">{{ stat.number }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
       </div>
-      <div class="stat-card">
-        <span class="stat-number">4,000+</span>
-        <span class="stat-label">Slack Members</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">~15</span>
-        <span class="stat-label">Events Per Year</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">2024</span>
-        <span class="stat-label">Year Founded</span>
-      </div>
+{%- endfor %}
     </div>
   </section>
 

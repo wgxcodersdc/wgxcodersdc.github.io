@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+{%- assign meetup_link = site.data.join_links | where: "name", "Meetup" | first -%}
+<div class="homepage">
+
+  <section class="home-hero">
+    <img src="/logos/png/circles/400x400/wgxc_circle_color_white_background.png" alt="WGXC DC logo" class="home-hero-logo">
+    <h1>Code. Connect. Grow.</h1>
+    <p class="home-hero-subtitle">A DC community where women and gender-expansive technologists build skills, careers, and friendships</p>
+    <div class="home-hero-actions">
+      <a href="{{ meetup_link.url }}" class="btn-primary">Join Us on Meetup</a>
+      <a href="#events" class="btn-secondary">Explore Events</a>
+    </div>
+  </section>
+
+  <section class="home-stats">{% for stat in site.data.stats %}
+    <div class="stat-card">
+      <span class="stat-number">{{ stat.number }}</span>
+      <span class="stat-label">{{ stat.label }}</span>
+    </div>
+{%- endfor %}
+  </section>
+
+  <section id="events" class="home-section">
+    <h2>What We Do</h2>
+    <p>From hands-on workshops to casual brunches, there's something for everyone.</p>
+    <div class="event-categories">{% for cat in site.data.event_categories %}
+      <div class="category-card">
+        <div class="category-icon category-icon--{{ cat.color_key }}">
+          <i class="{{ cat.icon }}"></i>
+        </div>
+        <h3>{{ cat.title }}</h3>
+        <p>{{ cat.description }}</p>
+        <ul class="category-examples">{% for example in cat.examples %}
+          <li>{{ example }}</li>
+{%- endfor %}
+        </ul>
+      </div>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2>Event Highlights</h2>
+    <p>A few favorites from our community.</p>
+    <div class="highlights">{% for event in site.data.event_highlights %}
+      <div class="highlight-card">
+        <div class="highlight-image highlight-image--{{ event.position }}">
+          <img src="{{ event.image }}"
+               alt="{{ event.image_alt }}"
+               loading="lazy" width="{{ event.image_width }}" height="{{ event.image_height }}">
+        </div>
+        <div class="highlight-content">
+          <h3>{{ event.title }}</h3>
+          <span class="highlight-meta">{{ event.date }}</span>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section class="home-join-cta">
+    <h2>Find Your Place Here</h2>
+    <p>Whether you're new to programming, experienced, or simply passionate about technology&mdash;there's a place for you.</p>
+    <div class="join-links">{% for link in site.data.join_links %}
+      <a href="{{ link.url }}" class="join-link">
+        <i class="{{ link.icon }}"></i>
+        <strong>{{ link.name }}</strong>
+        <span>{{ link.tagline }}</span>
+      </a>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section class="home-support">
+    <h2>Support Our Mission</h2>
+    <p>WGXC Inc is a 501(c)(3) nonprofit. Your tax-deductible donation helps us keep events free and our community growing.</p>
+    <div class="home-support-actions">
+      <button zeffy-form-link="https://www.zeffy.com/embed/donation-form/kickstart-wgxc-dc?modal=true" class="btn-primary">Donate</button>
+      <a href="/donate/" class="home-support-learn-more">Learn more about how donations are used</a>
+    </div>
+  </section>
+
+</div>
