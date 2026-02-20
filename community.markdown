@@ -44,4 +44,4 @@ WGXC DC is entirely volunteer-run. Here are some ways you can help:
 - **Content creation** -- Help with social media, blog posts, or event write-ups
 - **Tech support** -- Contribute to our website or help with livestreaming events
 
-Interested? Reach out to us on [Slack](https://forms.gle/p6KYBpxSMoq3CvQU8) or email [dc@wgxcoderdc.org](mailto:dc@wgxcoderdc.org).
+Interested? Reach out to us on [Slack](https://forms.gle/p6KYBpxSMoq3CvQU8) or email [dc@wgxcodersdc.org](mailto:dc@wgxcodersdc.org).

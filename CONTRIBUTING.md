@@ -285,4 +285,4 @@ Pushes to `main` automatically build and deploy to GitHub Pages via the GitHub A
 - **Jekyll docs:** [jekyllrb.com/docs](https://jekyllrb.com/docs/)
 - **Minima theme:** [github.com/jekyll/minima](https://github.com/jekyll/minima)
 - **YAML syntax:** [learnxinyminutes.com/docs/yaml](https://learnxinyminutes.com/docs/yaml/)
-- **Questions?** Email [dc@wgxcoderdc.org](mailto:dc@wgxcoderdc.org)
+- **Questions?** Email [dc@wgxcodersdc.org](mailto:dc@wgxcodersdc.org)
