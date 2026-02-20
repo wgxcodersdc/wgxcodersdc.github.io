@@ -12,7 +12,7 @@ Whether you're looking to learn, connect, or contribute, there are many ways to 
 
 Connect with women and non-binary members through our Meetup group, where you can RSVP and attend both virtual and in-person events, including technical talks, coding workshops, and networking sessions.
 
-### [Slack](https://join.slack.com/t/wgxcdc/shared_invite/zt-30t0pif1z-P0p1ckYWouUQjf8yII19IQ)
+### [Slack](https://forms.gle/p6KYBpxSMoq3CvQU8)
 
 Join our Slack for the most up-to-date conversations and event notifications.
 
@@ -44,4 +44,4 @@ WGXC DC is entirely volunteer-run. Here are some ways you can help:
 - **Content creation** -- Help with social media, blog posts, or event write-ups
 - **Tech support** -- Contribute to our website or help with livestreaming events
 
-Interested? Reach out to us on [Slack](https://join.slack.com/t/wgxcdc/shared_invite/zt-30t0pif1z-P0p1ckYWouUQjf8yII19IQ) or email [organizers@wgxcodersdc.org](mailto:organizers@wgxcodersdc.org).
+Interested? Reach out to us on [Slack](https://forms.gle/p6KYBpxSMoq3CvQU8) or email [dc@wgxcodersdc.org](mailto:dc@wgxcodersdc.org).
