@@ -8,10 +8,10 @@
 
 ## Getting Started
 
-1. **Clone the repository**
-
+1. **Fork and clone the repository**
+   
    ```bash
-   git clone https://github.com/wgxcodersdc/wgxcodersdc.github.io.git
+   git clone https://github.com/<your-github-user>/wgxcodersdc.github.io
    cd wgxcodersdc.github.io
    ```
 
