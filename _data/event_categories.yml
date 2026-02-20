@@ -1,0 +1,31 @@
+- title: Technical Workshops
+  color_key: workshops
+  icon: fa-solid fa-laptop-code
+  description: Hands-on skill-building sessions led by community members and guest experts.
+  examples:
+    - Boost Your Command-Line Chops at Shell School
+    - Learn Creative Coding
+
+- title: Career Development
+  color_key: career
+  icon: fa-solid fa-chart-line
+  description: Navigate your career with talks on negotiation, interviews, and professional growth.
+  examples:
+    - Know Your Worth When the Job Market is Tough
+    - Ace Your Behavioral Interview
+
+- title: Social Meetups
+  color_key: social
+  icon: fa-solid fa-utensils
+  description: "Build friendships over food&mdash;brunch clubs, dinner clubs, and holiday socials across the DC area."
+  examples:
+    - Brunch Club @ Union Market
+    - Holiday Social w/ DC Women in Agile
+
+- title: Community Hangouts
+  color_key: community
+  icon: fa-solid fa-mug-hot
+  description: Low-key spaces to hang out, learn together, and get creative.
+  examples:
+    - WGXC Tech Book Club
+    - Craft-n-Crush Your Coding Interview

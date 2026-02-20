@@ -1,0 +1,19 @@
+- name: Meetup
+  url: https://www.meetup.com/women-and-gender-expansive-coders-dc-wgxc-dc/
+  icon: fa-brands fa-meetup
+  tagline: RSVP to events
+
+- name: Slack
+  url: https://join.slack.com/t/wgxcdc/shared_invite/zt-30t0pif1z-P0p1ckYWouUQjf8yII19IQ
+  icon: fa-brands fa-slack
+  tagline: Join the conversation
+
+- name: LinkedIn
+  url: https://www.linkedin.com/company/women-and-gender-expansive-coders-dc
+  icon: fa-brands fa-linkedin
+  tagline: Stay in the loop
+
+- name: YouTube
+  url: https://www.youtube.com/@WGXCDC
+  icon: fa-brands fa-youtube
+  tagline: Watch past talks

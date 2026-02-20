@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Donate to WGXC
-categories: 
+categories:
+published: false
 ---
 Did you know that WGXC is a 501(c)(3) nonprofit? Your donation helps us continue to offer programming to our community, free of charge. Please consider [making a tax-deductible donation](https://www.zeffy.com/en-US/donation-form/kickstart-wgxc-dc) today.

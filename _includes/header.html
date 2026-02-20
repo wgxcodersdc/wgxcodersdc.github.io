@@ -2,7 +2,7 @@
 
   <div class="header wrapper">
     <div class="cell">
-    <img src="/logos/png/circles/174x174/wgxc_circle_color_white_background.png" class="header-logo" alt="WGXC logo" align="left">
+    <a href="{{ "/" | relative_url }}"><img src="/logos/png/circles/174x174/wgxc_circle_color_white_background.png" class="header-logo" alt="WGXC logo" align="left"></a>
     </div>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
