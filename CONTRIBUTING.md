@@ -11,7 +11,7 @@
 1. **Fork and clone the repository**
    
    ```bash
-   git clone https://github.com/<your-github-user>/wgxcodersdc.github.io
+   git clone https://github.com/<your-github-user>/wgxcodersdc.github.io.git
    cd wgxcodersdc.github.io
    ```
 
