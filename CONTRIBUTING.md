@@ -2,7 +2,9 @@
 
 ## Prerequisites
 
-- **Ruby 3.3.6** -- we recommend using [rbenv](https://github.com/rbenv/rbenv) to manage Ruby versions
+- **Ruby 3.3.6** -- we recommend using [rbenv](https://github.com/rbenv/rbenv) to manage Ruby versions.
+  - `rbenv install 3.3.6`
+  - `rbenv rehash`
 - **Bundler** -- installed with `gem install bundler`
 - **Git**
 
