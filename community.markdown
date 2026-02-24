@@ -32,7 +32,7 @@ Subscribe to the Women and Gender eXpansive Coders DC YouTube channel for past e
 
 Interested in sharing your ideas or practicing your public speaking in front of a supportive audience? We host regular lightning talks online and in-person and welcome speakers of all experience levels.
 
-<a href="/event-interest-form.html" class="btn-primary">Submit a Talk Proposal</a>
+<a href="{{ '/event-interest-form.html' | relative_url }}" class="btn-primary">Submit a Talk Proposal</a>
 
 ## Volunteer With Us
 
