@@ -280,6 +280,12 @@ Each entry is a filename. The display text comes from the page's `title` in its 
 
 Pushes to `main` automatically build and deploy to GitHub Pages via the GitHub Actions workflow in `.github/workflows/jekyll.yml`.
 
+### Pull Request Previews
+
+When you open a pull request from a branch in this repository, a live preview of the site is automatically built and deployed. A comment will be posted on your PR with the preview URL (e.g., `https://wgxcodersdc.org/pr-preview/pr-17/`). The preview updates each time you push new commits to the PR branch and is cleaned up automatically when the PR is closed or merged.
+
+**Note for fork contributors:** Automatic previews are not available for PRs from forks due to GitHub token permissions. To preview your changes, run `bundle exec jekyll serve` locally (see [Getting Started](#getting-started)).
+
 ## Getting Help
 
 - **Jekyll docs:** [jekyllrb.com/docs](https://jekyllrb.com/docs/)
