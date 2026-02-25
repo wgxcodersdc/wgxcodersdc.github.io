@@ -6,7 +6,7 @@ layout: default
 <div class="homepage">
 
   <section class="home-hero">
-    <img src="/logos/png/circles/400x400/wgxc_circle_color_white_background.png" alt="WGXC DC logo" class="home-hero-logo">
+    <img src="{{ '/logos/png/circles/400x400/wgxc_circle_color_white_background.png' | relative_url }}" alt="WGXC DC logo" class="home-hero-logo">
     <h1>Code. Connect. Grow.</h1>
     <p class="home-hero-subtitle">A DC community where women and gender-expansive technologists build skills, careers, and friendships</p>
     <div class="home-hero-actions">
@@ -48,7 +48,7 @@ layout: default
     <div class="highlights">{% for event in site.data.event_highlights %}
       <div class="highlight-card">
         <div class="highlight-image highlight-image--{{ event.position }}">
-          <img src="{{ event.image }}"
+          <img src="{{ event.image | relative_url }}"
                alt="{{ event.image_alt }}"
                loading="lazy" width="{{ event.image_width }}" height="{{ event.image_height }}">
         </div>
@@ -75,8 +75,8 @@ layout: default
       {%- endif -%}
     </div>
     <div class="blog-feature-actions">
-      <a href="/event-interest-form.html" class="btn-secondary btn-small">Submit a Talk Proposal</a>
-      <a href="/blog/" class="blog-feature-more-link">View all posts &rarr;</a>
+      <a href="{{ '/event-interest-form.html' | relative_url }}" class="btn-secondary btn-small">Submit a Talk Proposal</a>
+      <a href="{{ '/blog/' | relative_url }}" class="blog-feature-more-link">View all posts &rarr;</a>
     </div>
   </section>
   {%- endif -%}
@@ -99,7 +99,7 @@ layout: default
     <p>WGXC Inc is a 501(c)(3) nonprofit. Your tax-deductible donation helps us keep events free and our community growing.</p>
     <div class="home-support-actions">
       <button zeffy-form-link="https://www.zeffy.com/embed/donation-form/kickstart-wgxc-dc?modal=true" class="btn-primary">Donate</button>
-      <a href="/donate/" class="home-support-learn-more">Learn more about how donations are used</a>
+      <a href="{{ '/donate/' | relative_url }}" class="home-support-learn-more">Learn more about how donations are used</a>
     </div>
   </section>
 

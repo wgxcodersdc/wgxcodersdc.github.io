@@ -1,0 +1,46 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: [main]
+
+# Only run for same-repo PRs (fork PRs have read-only GITHUB_TOKEN)
+# This condition is checked at the job level below
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    # Skip PRs from forks — their GITHUB_TOKEN is read-only, so the job
+    # would fail trying to push to gh-pages or comment on the PR.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+
+    # Explicit permissions required by the preview action:
+    #   contents: write   — push the built site to the gh-pages branch
+    #   pull-requests: write — post/update the preview-link comment on the PR
+    # These are not granted by default in repos/orgs that use the
+    # restrictive default token permissions.
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.6
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        if: github.event.action != 'closed'
+        run: bundle exec jekyll build --baseurl "/pr-preview/pr-${{ github.event.number }}"
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: _site/

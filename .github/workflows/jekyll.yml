@@ -25,3 +25,7 @@ jobs:
                  with:
                       github_token: ${{ secrets.GITHUB_TOKEN }}
                       publish_dir: ./_site
+                      # Preserve existing files on gh-pages (e.g. pr-preview/)
+                      # that aren't part of this build. Without this, the deploy
+                      # would wipe all PR preview subdirectories on every push to main.
+                      keep_files: true
